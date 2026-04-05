@@ -1,0 +1,61 @@
+
+**** 03/27/26 21:45:27 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-new1"  [ d:\university\habib\sem 4\basic electronics\lab\cep\project-pspicefiles\newtry-PSpiceFiles\SCHEMATI
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "new1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\Yousuf Lali\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 20ms 0 1u 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source NEWTRY
+R_Rc         N29048 N28992  6.8k TC=0,0 
+C_C4         N29048 N290661 15u TC=0
+C_C2         N29054 N29116 15u TC=0
+X_Q1         N29048 N29054 N29134 awb2n3904 PARAMS:                            
++                 
+V_V3         N29116 0  
++SIN 0 10mV 1k 0 0 0
+R_R1         N29054 N28992  110k TC=0,0 
+R_R2         0 N29054  10k TC=0,0 
+V_V4         N28992 0 12Vdc
+X_Q2         N28992 N29735 N29766 awb2n3904 PARAMS:                            
++                 
+R_R3         N29735 N28992  220k TC=0,0 
+R_R4         0 N29735  22k TC=0,0 
+R_R5         0 N29766  1k TC=0,0 
+C_C5         N29766 N34259 15u TC=0
+R_R6         0 N34259  100000Meg TC=0,0 
+R_R7         N29735 N290661  1k TC=0,0 
+R_R8         0 N29134  390 TC=0,0 
+C_C6         N34815 0 15u TC=0
+
+**** RESUMING new1.cir ****
+.END
+
+ERROR(ORPSIM-15141): Less than 2 connections at node N34815.
+
+ERROR(ORPSIM-15142): Node N34815 is floating
+

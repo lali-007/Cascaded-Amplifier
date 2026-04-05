@@ -1,0 +1,59 @@
+
+**** 03/14/26 01:30:12 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-test2"  [ D:\University\Habib\Sem 4\Basic Electronics\Lab\CEP\Project-PSpiceFiles\SCHEMATIC1\test2.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "test2.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\Yousuf Lali\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 5ms 1us 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source PROJECT
+X_Q1         N00266 N00240 N00273 awb2n3904 PARAMS:                            
++                 
+C_C2         N00240 N00459 1u TC=0
+C_C3         N00273 0 220u TC=0
+C_C4         N00266 N01083 0.1u TC=0
+R_R1         N00240 N00545  110k TC=0,0 
+R_R2         0 N00240  10k TC=0,0 
+R_Rc         N00266 N00545  4.2k TC=0,0 
+R_RE         0 N00273  390 TC=0,0 
+V_V2         M_UN0001 N00545 12Vdc
+X_Q2         N00545 N00950 N00973 awb2n3904 PARAMS:                            
++                 
+R_CC1R2         0 N00950  11k TC=0,0 
+R_CC1RE         0 N00973  1k TC=0,0 
+R_CC1R1         N00950 N00545  11k TC=0,0 
+C_C5         N00973 N009141 1u TC=0
+C_C6         N00950 N01083 0.1u TC=0
+V_V3         N00459 0  
++SIN 0 10mV 1k 0 0 0
+R_R3         0 N009141  10k TC=0,0 
+
+**** RESUMING test2.cir ****
+.END
+
+ERROR(ORPSIM-15142): Node N01083 is floating
+

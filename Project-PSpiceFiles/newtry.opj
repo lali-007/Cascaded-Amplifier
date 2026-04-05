@@ -1,0 +1,134 @@
+(ExpressProject "newtry"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\newtry.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Outputs"
+    (File ".\newtry-pspicefiles\schematic1\schematic1.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\newtry-pspicefiles\schematic1\try1.sim"
+        (DisplayName "SCHEMATIC1-try1")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\newtry-pspicefiles\schematic1\dccheck.sim"
+        (DisplayName "SCHEMATIC1-dccheck")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\newtry-pspicefiles\schematic1\trydc2.sim"
+        (DisplayName "SCHEMATIC1-trydc2")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\newtry-pspicefiles\schematic1\try3.sim"
+        (DisplayName "SCHEMATIC1-try3")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\newtry-pspicefiles\schematic1\new.sim"
+        (DisplayName "SCHEMATIC1-new")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\newtry-pspicefiles\schematic1\dcagain.sim"
+        (DisplayName "SCHEMATIC1-dcagain")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\newtry-pspicefiles\schematic1\dc.sim"
+        (DisplayName "SCHEMATIC1-dc")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\newtry-pspicefiles\schematic1\tryce2.sim"
+        (DisplayName "SCHEMATIC1-tryCE2")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\newtry-pspicefiles\schematic1\dctry7.sim"
+        (DisplayName "SCHEMATIC1-dctry7")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\newtry-pspicefiles\schematic1\lastbias.sim"
+        (DisplayName "SCHEMATIC1-lastbias")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\newtry-pspicefiles\schematic1\lastlastbias.sim"
+        (DisplayName "SCHEMATIC1-lastlastbias")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\newtry-pspicefiles\schematic1\l2.sim"
+        (DisplayName "SCHEMATIC1-l2")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\newtry-pspicefiles\schematic1\lasttransient.sim"
+        (DisplayName "SCHEMATIC1-lasttransient")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\newtry-pspicefiles\schematic1\new1.sim"
+        (DisplayName "SCHEMATIC1-new1")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\newtry-pspicefiles\schematic1\new2.sim"
+        (DisplayName "SCHEMATIC1-new2")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\newtry-pspicefiles\schematic1\dc1.sim"
+        (DisplayName "SCHEMATIC1-dc1")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\newtry-pspicefiles\schematic1\dc3.sim"
+        (DisplayName "SCHEMATIC1-dc3")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\newtry-pspicefiles\schematic1\new1.sim"))
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (2N3904
+      (FullPartName "2N3904.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ADVANLS\BJN.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0")))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "d:\university\habib\sem 4\basic electronics\lab\cep\project-pspicefiles\newtry.dsn")
+      (Path "Design Resources"
+         "d:\university\habib\sem 4\basic electronics\lab\cep\project-pspicefiles\newtry.dsn"
+         "SCHEMATIC1")
+      (Path "Outputs")
+      (Select "Design Resources"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 310"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 67 1115 -15 334")
+        (Scroll "0 59")
+        (Zoom "113")
+        (Occurrence "/"))
+      (Path
+         "D:\UNIVERSITY\HABIB\SEM 4\BASIC ELECTRONICS\LAB\CEP\PROJECT-PSPICEFILES\NEWTRY.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1")))
+  (MPSSessionName "Yousuf Lali"))

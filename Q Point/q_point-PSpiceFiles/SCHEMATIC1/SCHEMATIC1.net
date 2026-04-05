@@ -1,0 +1,7 @@
+* source Q_POINT
+V_V4         N36568 0 20Vdc
+R_Rc         N36622 N36568  1k TC=0,0 
+R_R2         N36708 N37270  100k TC=0,0 
+X_Q1         N36622 N36708 0 awb2n3904 PARAMS:                                 
++            
+V_V5         N37270 0 0Vdc

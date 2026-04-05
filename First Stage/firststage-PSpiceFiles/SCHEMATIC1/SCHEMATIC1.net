@@ -1,0 +1,45 @@
+* source FIRSTSTAGE
+V_V3         N36648 0  
++SIN 0 20mV 1k 0 0 0
+R_R2         0 N36600  2.7k TC=0,0 
+X_Q1         N36594 N36600 N36666 awb2n3904 PARAMS:                            
++                 
+V_V4         N36536 0 15Vdc
+R_R1         N36600 N36536  18k TC=0,0 
+R_Rc         N36594 N36536  1k TC=0,0 
+C_C2         N36600 N36648 10u TC=0
+R_R8         0 N36666  150 TC=0,0 
+C_C3         N37084 N36594 10u TC=0
+R_R5         0 N37923  1k TC=0,0 
+X_Q2         N36536 N37084 N37923 awb2n3904 PARAMS:                            
++                 
+R_R3         N37084 N36536  9.1k TC=0,0 
+R_R4         0 N37084  11k TC=0,0 
+C_C4         N39047 N37923 10u TC=0
+R_R9         0 N38486  100Meg TC=0,0 
+X_Q3         N36536 N39043 N39177 awb2n3904 PARAMS:                            
++                 
+C_C7         N40613 N39177 10u TC=0
+R_R12         0 N39047  2.7k TC=0,0 
+R_Rc1         N39037 N36536  1k TC=0,0 
+R_R13         0 N39043  11k TC=0,0 
+C_C5         N39043 N39037 10u TC=0
+R_R10         N39043 N36536  9.1k TC=0,0 
+R_R11         N39047 N36536  18k TC=0,0 
+R_R14         0 N39177  1k TC=0,0 
+X_Q4         N39037 N39047 N39181 awb2n3904 PARAMS:                            
++                 
+R_R15         0 N39181  150 TC=0,0 
+X_Q5         N36536 N40609 N40731 awb2n3904 PARAMS:                            
++                 
+R_R20         0 N40731  1k TC=0,0 
+R_R19         0 N40609  11k TC=0,0 
+R_R18         0 N40613  2.2k TC=0,0 
+X_Q6         N40603 N40613 N40735 awb2n3904 PARAMS:                            
++                 
+R_R17         N40613 N36536  15k TC=0,0 
+C_C9         N38486 N40731 10u TC=0
+R_R16         N40609 N36536  9.1k TC=0,0 
+R_Rc2         N40603 N36536  1.5k TC=0,0 
+R_R21         0 N40735  100 TC=0,0 
+C_C8         N40609 N40603 10u TC=0

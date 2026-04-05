@@ -1,0 +1,242 @@
+
+**** 04/03/26 23:18:30 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-first"  [ D:\University\Habib\Sem 4\Basic Electronics\Lab\Lab 11\firststage-PSpiceFiles\SCHEMATIC1\first.sim
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "first.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\Yousuf Lali\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 5ms 0 1u 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source FIRSTSTAGE
+V_V3         N36648 0  
++SIN 0 20mV 1k 0 0 0
+R_R2         0 N36600  2.7k TC=0,0 
+X_Q1         N36594 N36600 N36666 awb2n3904 PARAMS:                            
++                 
+V_V4         N36536 0 15Vdc
+R_R1         N36600 N36536  18k TC=0,0 
+R_Rc         N36594 N36536  1k TC=0,0 
+C_C2         N36600 N36648 10u TC=0
+R_R8         0 N36666  150 TC=0,0 
+C_C3         N37084 N36594 10u TC=0
+R_R5         0 N37923  1k TC=0,0 
+X_Q2         N36536 N37084 N37923 awb2n3904 PARAMS:                            
++                 
+R_R3         N37084 N36536  9.1k TC=0,0 
+R_R4         0 N37084  11k TC=0,0 
+C_C4         N39047 N37923 10u TC=0
+R_R9         0 N38486  100Meg TC=0,0 
+X_Q3         N36536 N39043 N39177 awb2n3904 PARAMS:                            
++                 
+C_C7         N40613 N39177 10u TC=0
+R_R12         0 N39047  2.7k TC=0,0 
+R_Rc1         N39037 N36536  1k TC=0,0 
+R_R13         0 N39043  11k TC=0,0 
+C_C5         N39043 N39037 10u TC=0
+R_R10         N39043 N36536  9.1k TC=0,0 
+R_R11         N39047 N36536  18k TC=0,0 
+R_R14         0 N39177  1k TC=0,0 
+X_Q4         N39037 N39047 N39181 awb2n3904 PARAMS:                            
++                 
+R_R15         0 N39181  150 TC=0,0 
+X_Q5         N36536 N40609 N40731 awb2n3904 PARAMS:                            
++                 
+R_R20         0 N40731  1k TC=0,0 
+R_R19         0 N40609  11k TC=0,0 
+R_R18         0 N40613  2.2k TC=0,0 
+X_Q6         N40603 N40613 N40735 awb2n3904 PARAMS:                            
++                 
+R_R17         N40613 N36536  15k TC=0,0 
+C_C9         N38486 N40731 10u TC=0
+R_R16         N40609 N36536  9.1k TC=0,0 
+R_Rc2         N40603 N36536  1.5k TC=0,0 
+R_R21         0 N40735  100 TC=0,0 
+C_C8         N40609 N40603 10u TC=0
+
+**** RESUMING first.cir ****
+.END
+
+**** 04/03/26 23:18:30 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-first"  [ D:\University\Habib\Sem 4\Basic Electronics\Lab\Lab 11\firststage-PSpiceFiles\SCHEMATIC1\first.sim
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_Q1.model4     X_Q2.model4     X_Q3.model4     X_Q4.model4     
+               NPN             NPN             NPN             NPN             
+       LEVEL    1               1               1               1            
+          IS  172.800000E-18  172.800000E-18  172.800000E-18  172.800000E-18 
+          EG    1.206           1.206           1.206           1.206        
+          BF  254.395         254.395         254.395         254.395        
+          NF     .85             .85             .85             .85         
+         VAF   10              10              10              10            
+         IKF     .016374         .016374         .016374         .016374     
+         ISE    9.974460E-15    9.974460E-15    9.974460E-15    9.974460E-15 
+          NE    1.20863         1.20863         1.20863         1.20863      
+          BR     .1              .1              .1              .1          
+          NR     .891964         .891964         .891964         .891964     
+         VAR    7.74046         7.74046         7.74046         7.74046      
+         IKR     .163741         .163741         .163741         .163741     
+         ISC    9.974460E-15    9.974460E-15    9.974460E-15    9.974460E-15 
+          NC    2.84343         2.84343         2.84343         2.84343      
+         ISS    0               0               0               0            
+          RB   28.3394         28.3394         28.3394         28.3394       
+         RBM     .01             .01             .01             .01         
+         IRB     .01             .01             .01             .01         
+          RE    1.339110E-03    1.339110E-03    1.339110E-03    1.339110E-03 
+          RC    2.08353         2.08353         2.08353         2.08353      
+         CJE    4.566140E-12    4.566140E-12    4.566140E-12    4.566140E-12 
+         VJE     .4              .4              .4              .4          
+         MJE     .245712         .245712         .245712         .245712     
+         CJC    3.724850E-12    3.724850E-12    3.724850E-12    3.724850E-12 
+         VJC     .4              .4              .4              .4          
+         MJC     .236002         .236002         .236002         .236002     
+        XCJC     .8              .8              .8              .8          
+         CJS    0               0               0               0            
+         VJS     .75             .75             .75             .75         
+         MJS     .5              .5              .5              .5          
+          FC     .519152         .519152         .519152         .519152     
+          TF  481.412000E-12  481.412000E-12  481.412000E-12  481.412000E-12 
+         XTF     .9628           .9628           .9628           .9628       
+         VTF    9.52193         9.52193         9.52193         9.52193      
+         ITF     .011333         .011333         .011333         .011333     
+          TR    1.303990E-06    1.303990E-06    1.303990E-06    1.303990E-06 
+         XTB    1.20888         1.20888         1.20888         1.20888      
+         XTI    1.34879         1.34879         1.34879         1.34879      
+          KF    0               0               0               0            
+          AF    1               1               1               1            
+          CN    2.42            2.42            2.42            2.42         
+           D     .87             .87             .87             .87         
+
+
+               X_Q5.model4     X_Q6.model4     
+               NPN             NPN             
+       LEVEL    1               1            
+          IS  172.800000E-18  172.800000E-18 
+          EG    1.206           1.206        
+          BF  254.395         254.395        
+          NF     .85             .85         
+         VAF   10              10            
+         IKF     .016374         .016374     
+         ISE    9.974460E-15    9.974460E-15 
+          NE    1.20863         1.20863      
+          BR     .1              .1          
+          NR     .891964         .891964     
+         VAR    7.74046         7.74046      
+         IKR     .163741         .163741     
+         ISC    9.974460E-15    9.974460E-15 
+          NC    2.84343         2.84343      
+         ISS    0               0            
+          RB   28.3394         28.3394       
+         RBM     .01             .01         
+         IRB     .01             .01         
+          RE    1.339110E-03    1.339110E-03 
+          RC    2.08353         2.08353      
+         CJE    4.566140E-12    4.566140E-12 
+         VJE     .4              .4          
+         MJE     .245712         .245712     
+         CJC    3.724850E-12    3.724850E-12 
+         VJC     .4              .4          
+         MJC     .236002         .236002     
+        XCJC     .8              .8          
+         CJS    0               0            
+         VJS     .75             .75         
+         MJS     .5              .5          
+          FC     .519152         .519152     
+          TF  481.412000E-12  481.412000E-12 
+         XTF     .9628           .9628       
+         VTF    9.52193         9.52193      
+         ITF     .011333         .011333     
+          TR    1.303990E-06    1.303990E-06 
+         XTB    1.20888         1.20888      
+         XTI    1.34879         1.34879      
+          KF    0               0            
+          AF    1               1            
+          CN    2.42            2.42         
+           D     .87             .87         
+
+
+**** 04/03/26 23:18:30 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-first"  [ D:\University\Habib\Sem 4\Basic Electronics\Lab\Lab 11\firststage-PSpiceFiles\SCHEMATIC1\first.sim
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N36536)   15.0000 (N36594)    7.5659 (N36600)    1.8133 (N36648)    0.0000     
+
+(N36666)    1.1243 (N37084)    7.9391 (N37923)    7.2533 (N38486)    0.0000     
+
+(N39037)    7.5659 (N39043)    7.9391 (N39047)    1.8133 (N39177)    7.2533     
+
+(N39181)    1.1243 (N40603)    1.1968 (N40609)    7.9391 (N40613)    1.6474     
+
+(N40731)    7.2533 (N40735)     .9344 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3         0.000E+00
+    V_V4        -5.035E-02
+
+    TOTAL POWER DISSIPATION   7.55E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 04/03/26 23:18:30 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-first"  [ D:\University\Habib\Sem 4\Basic Electronics\Lab\Lab 11\firststage-PSpiceFiles\SCHEMATIC1\first.sim
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .28
+
